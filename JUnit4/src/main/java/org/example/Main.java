@@ -17,8 +17,6 @@ public class Main {
 
         TaskManager tm = new TaskManager();
 
-        ArrayList<String> tasks = new ArrayList<>();
-
         Servicio servivio = new Servicio();
 
         boolean x = true;
@@ -40,11 +38,6 @@ public class Main {
                 x = false;
             }
         }while (x);
-
-        System.out.println("These are the tasks pending to complete");
-        for (String list: tasks){
-            System.out.println("- " + list);
-        }
 
         do {
             System.out.println("Please, delete the task you managed to complete");
