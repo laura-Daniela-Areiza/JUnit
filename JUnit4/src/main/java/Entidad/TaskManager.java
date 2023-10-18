@@ -4,27 +4,25 @@ import java.util.ArrayList;
 
 public class TaskManager {
 
-    private ArrayList<String> task;
+    private String task;
 
     public TaskManager() {
     }
 
-    public TaskManager(ArrayList<String> task) {
-        this.task = task;
+    public TaskManager(String task) {
     }
 
-    public ArrayList<String> getTask() {
+    public String getTask() {
         return task;
     }
 
-    public void setTask(ArrayList<String> task) {
+    public void setTask(String task) {
         this.task = task;
     }
 
     @Override
     public String toString() {
-        return "TaskManager{" +
-                "task=" + task +
-                '}';
+        return "- \n" + task;
     }
 }
+
